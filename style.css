@@ -1,0 +1,40 @@
+body {
+    background: #0b1120;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+.card {
+    background: #111827;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #dc2626;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.case {
+    background: #1f2933;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 6px;
+}

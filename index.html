@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseTrace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🕵️ CaseTrace</h1>
+<p>Digital Crime Evidence Analyzer</p>
+
+<div class="card">
+    <input id="caseId" placeholder="Case ID">
+    <input id="crimeType" placeholder="Crime Type">
+    <input id="location" placeholder="Location">
+    <textarea id="evidence" placeholder="Evidence details..."></textarea>
+    <button onclick="addCase()">Add Case</button>
+</div>
+
+<h2>📂 Stored Cases</h2>
+<div id="caseList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
