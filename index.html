@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CaseTrace</title>
+    <title>CaseTrace X</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🕵️ CaseTrace</h1>
-<p>Digital Crime Evidence Analyzer</p>
+<h1>🕵️ CaseTrace X</h1>
+<p>Interactive Crime & Forensic Analyzer</p>
+
+<input id="search" placeholder="Search by crime or location..." onkeyup="searchCases()">
 
 <div class="card">
     <input id="caseId" placeholder="Case ID">
@@ -18,9 +20,12 @@
     <button onclick="addCase()">Add Case</button>
 </div>
 
-<h2>📂 Stored Cases</h2>
+<h3 id="stats"></h3>
+
 <div id="caseList"></div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
