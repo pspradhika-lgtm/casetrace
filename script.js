@@ -1,10 +1,23 @@
+const caseId = document.getElementById("caseId");
+const crimeType = document.getElementById("crimeType");
+const locationInput = document.getElementById("location");
+const evidence = document.getElementById("evidence");
+const caseList = document.getElementById("caseList");
+const stats = document.getElementById("stats");
+const search = document.getElementById("search");
+
 let cases = JSON.parse(localStorage.getItem("cases")) || [];
 
 function addCase() {
+    if (!caseId.value || !crimeType.value || !locationInput.value) {
+        alert("Please fill all fields");
+        return;
+    }
+
     let newCase = {
         id: caseId.value,
         crime: crimeType.value.toLowerCase(),
-        location: location.value.toLowerCase(),
+        location: locationInput.value.toLowerCase(),
         evidence: evidence.value,
         time: new Date().toLocaleString()
     };
@@ -65,9 +78,10 @@ function updateStats() {
 function clearInputs() {
     caseId.value = "";
     crimeType.value = "";
-    location.value = "";
+    locationInput.value = "";
     evidence.value = "";
 }
 
 displayCases(cases);
 updateStats();
+
