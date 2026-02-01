@@ -38,3 +38,11 @@ button {
     max-width: 500px;
     border-radius: 6px;
 }
+.case button {
+    background: #ef4444;
+    margin-top: 8px;
+    padding: 5px;
+    width: 100%;
+}
+
+
